@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="apple-mobile-web-app-status-bar-style"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+		<meta name="theme-color" content="gainsboro"/>
+		<link rel="apple-touch-icon" size="144x144" href="/images/apple-touch-icon.png">
+		<!-- PWA splash screens for IOS (640px x 1136px) -->
+		<link rel="apple-touch-startup-image" href="/images/ios.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<!-- iPhone 5, 5C, 5S, iPod Touch 5g (750px x 1334px) -->
+		<link rel="apple-touch-startup-image" href="/images/launch.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+		<!-- iPhone 6 (1242x2208) -->
+		<link rel="apple-touch-startup-image" href="/images/6.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+		<!-- iPhone 8, 7, 6s, 6 (750px x 1334px) -->
+		<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px)" href="/images/launch.png">
+		<!-- iPhone 6+ (1125px x 2436px)-->
+		<link rel="apple-touch-startup-image" href="/images/6plus.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+		<!-- iPhone Xr (828px x 1792px) -->
+		<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" href="/images/XR.png">
+		<!-- iPhone X, Xs (1125px x 2436px) -->
+		<link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" href="/images/X.png">
+		<!-- iPhone Xs Max (1242px x 2688px) -->
+		<link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" href="/images/XSMAX.png">
+		<!-- ipad pro 12.9" (2048px x 2732px) -->
+		<!-- <link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" href="/images/apple-launch-2048x2732.png"> -->
+		<!-- ipad pro 11” (1668px x 2388px) -->
+		<!-- <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" href="/images/apple-launch-1668x2388.png"> -->
+		<!-- ipad pro 10.5" (1668px x 2224px) -->
+		<!-- <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" href="/apple-launch-1668x2224.png"> -->
+		<!-- ipad mini, air (1536px x 2048px) -->
+		<!-- <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" href="/apple-launch-1536x2048.png"> -->
+		<title>Список 🍏</title>
+		<link rel="manifest" href="/manifest.json">
+		<link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat&amp;display=swap" rel="stylesheet">
+		<script>
+			if ('serviceWorker' in navigator) {
+				window.addEventListener('load', function () {
+					navigator.serviceWorker.register('service-worker.js').then(function (registration) {
+						// Registration was successful
+						console.log('ServiceWorker registration successful with scope: ', registration.scope);
+					}, function (err) {
+						// registration failed :(
+						console.log('ServiceWorker registration failed: ', err);
+					}).catch(function (err) {
+						console.log(err)
+					});
+				});
+			} else {
+				console.log('service worker is not supported');
+			}
+		</script>
+	</head>
+	<body>
+		<main>
+			<div id="root"></div>
+		</main>
+	</body>
+</html>
