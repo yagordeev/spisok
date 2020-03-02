@@ -162,7 +162,7 @@ app.post(`/add/product`, (req, res) => {
 				const noDuplicate = itemName.filter((f) => !allProducts.includes(f));
 				//continue if noDuplicate is not empty
 				if(noDuplicate) {
-					duplicate.forEach(newItem => {
+					noDuplicate.forEach(newItem => {
 						const newProduct = _.capitalize(newItem.trim());
 						if(newProduct != '') {
 							const item = new Item({
