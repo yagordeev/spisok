@@ -1,7 +1,7 @@
 This project was made by [yaGordeev](http://yagordeev.com).
 
 This is a fully working and very useful application: [check it](https://spisok.yagordeev.com).<br>
-The purpose of this post was to demonstrate `React` (ES6 & Hooks), HTTP API calls to a `Node.js/Express` with secure `Axios` requests at the backend, using a `MongoDB/Mongoose` database, `Passport.js` authentication with sessions stored in Mongo database and prepared for deployment on `Heroku` uses `Webpack 4`.<br>
+The purpose of this post was to demonstrate `React` (ES6 & Hooks), HTTP API calls to a `Node.js/Express` with secure `Axios` requests at the backend, using a `MongoDB/Mongoose` database, `Passport.js` authentication with sessions stored in Mongo database and prepared for deployment on `Heroku` uses `Webpack 4` with `Babel` compiler.<br>
 It also has `swipe to delete` function as on iOS and working by a touch or with the mouse.
 
 ## Before you start
@@ -64,7 +64,7 @@ The page will reload if you make edits in `index.js` file due to `nodemon`.<br>
 Builds the app for production to the `client/dist` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br>
+The build is minified, using `Babel` compiler and the filenames include the hashes.<br>
 
 ### `npm run start`
 Basic run for your app.<br>
