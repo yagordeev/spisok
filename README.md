@@ -1,7 +1,7 @@
 This project was made by [yaGordeev](http://yagordeev.com).
 
 This is a fully working and very useful application: [check it](https://spisok.yagordeev.com).<br>
-The purpose of this post was to demonstrate `React` (ES6 & Hooks), HTTP API calls to a `Node.js/Express` with secure `Axios` requests at the backend, using a `MongoDB/Mongoose` database, `Passport.js` authentication with sessions stored in Mongo database and prepared for deployment on `Heroku`.<br>
+The purpose of this post was to demonstrate `React` (ES6 & Hooks), HTTP API calls to a `Node.js/Express` with secure `Axios` requests at the backend, using a `MongoDB/Mongoose` database, `Passport.js` authentication with sessions stored in Mongo database and prepared for deployment on `Heroku` uses `Webpack 4`.<br>
 It also has `swipe to delete` function as on iOS and working by a touch or with the mouse.
 
 ## Before you start
